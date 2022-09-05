@@ -1,0 +1,19 @@
+ALGORITHM sentence
+VAR
+    ch:CHAR
+    nb_char:INTEGER:=0 
+    nb_word:INTEGER:=1
+    nb_vowls:INTEGER:=0
+BEGIN
+     read ("this is a sentence.")
+     WHILE(ch <>" ") DO
+     nb_char:=nb_char+1
+     END WHILE
+     IF (ch:= " ") THEN
+        nb_word:=nb_word+1
+     END_IF
+     IF (ch:= "a","e","u","i","o","y" OR "A","E"..) THEN
+     nb_vowls=nb_vowls+1
+     END_IF
+
+END
